@@ -1,15 +1,149 @@
+/* ohmyfood color variables */
+:root {
+  --main-primary: #9356dc;
+  --main-secondary: #ff79da;
+  --main-tertiary: #99e2d0;
+  --omf-one: #008766;
+  --omf-two: #89c8fa;
+  --omf-three: #003a68;
+  --omf-four: #f3f3f3;
+  --omf-five: #353535;
+  --omf-six: #ffffff;
+  --omf-seven: #f6f6f6;
+  --omf-eight: #eaeaea;
+  --omf-nine: #b3b3b3;
+  --omf-ten: #000000;
+  --omf-shadow: #d6d6d6;
+}
+
+/* Body & Main styling */
+body,
+main {
+  font-family: "Roboto", sans-serif;
+  width: 375px;
+  background-color: var(--omf-background);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ohmyfood-logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5em;
+}
+
+.ohmyfood-title {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--omf-ten);
+}
+
+/* Image styling */
+.restaurant-image {
+  width: 375px;
+  height: 275px;
+}
+
+.restaurant-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Menu */
+
+.restaurant-menu-container {
+  width: 100%;
+  background-color: var(--omf-seven);
+  position: relative;
+  margin-top: -50px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.menu-card {
+  width: 349px;
+  background-color: var(--omf-six);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 15px 10px;
+  box-shadow: 10px 5px 5px var(--omf-shadow);
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.order-button {
+  margin-top: 25px;
+  width: 186px;
+  height: 50px;
+  background-color: #d96cfc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #b058cc;
+}
+
 /* Header & Footer */
 header,
 footer {
-  background-color: grey;
-  color: #99e2d0;
   width: 100%;
+  display: flex;
 }
 
 header {
-  height: 100px;
+  width: 375px;
+  position: fixed;
+  top: 0px;
+  height: 63px;
+  background-color: var(--omf-six);
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content a {
+  color: var(--omf-six);
 }
 
 footer {
-  height: 100px;
+  color: var(--omf-six);
+  height: 186px;
+  margin-top: 25px;
+  background-color: var(--omf-five);
+  padding: 15px 0 15px 5%;
 }
+
+.logo {
+  font-size: 24px;
+}
+
+/* Desktop view */
+/* @media (min-width: 768px) {
+  footer {
+    height: 114px;
+  }
+  header {
+    height: 96px;
+  }
+} */

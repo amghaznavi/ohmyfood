@@ -6,141 +6,155 @@
     <title>ohmyfood</title>
 
     <link
-      href="/images/logo/ohmyfood.png"
+      href="images/logo/ohmyfood.png"
       type="image/x-icon"
       rel="shortcut icon"
     />
 
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+
+    <!-- fontawesome.com -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
 
   <body>
     <!-- Main -->
     <main>
-      <div class="mainContainer">
+      <div class="main-container">
         <!-- Header -->
         <header>
-          <div class="mainHeader">
-            <img class="logo" alt="Logo" src="/images/logo/ohmyfood@2x.svg" />
+          <div class="main-header">
+            <img class="logo" alt="Logo" src="images/logo/ohmyfood@2x.svg" />
           </div>
         </header>
 
-        <!-- Localization -->
-        <div id="localisation">
+        <!-- location bar -->
+        <div class="location-bar">
           <span><i class="fas fa-map-marker-alt"></i> Islington, London</span>
         </div>
 
         <!-- Explorer -->
-        <section id="explorer">
-          <h1>Book the meal you want</h1>
-          <span>Discover our carefully selected high-end restaurants</span>
-          <button class="explorer-btn">Explore our restaurants</button>
-        </section>
+        <div class="explorer-container">
+          <div class="explorer">
+            <h1>Book the meal you want</h1>
+            <span>Discover our carefully selected high-end restaurants</span>
+            <button class="explorer-btn">Explore our restaurants</button>
+          </div>
+        </div>
 
         <!-- How it works -->
-        <section class="">
+        <div class="how-it-works">
           <h1>How it works</h1>
-          <div class="">
-            <article>
-              <span><i class=""></i>Choose a restaurant</span>
+          <div class="steps-container">
+            <article class="step">
+              <span class="step-number">1</span>
+              <span><i class="fas fa-mobile-alt"></i> Choose a restaurant</span>
             </article>
-
-            <article>
-              <span><i class=""></i>Build your meal</span>
+            <article class="step">
+              <span class="step-number">2</span>
+              <span><i class="fas fa-list-ul"></i> Build your meal</span>
             </article>
-
-            <article>
-              <span><i class=""></i>Enjoy your meal at the restaurant</span>
+            <article class="step">
+              <span class="step-number">3</span>
+              <span
+                ><i class="fas fa-store fa-fw"></i> Enjoy your meal at the
+                restaurant</span
+              >
             </article>
           </div>
-        </section>
+        </div>
 
-        <!-- Restaurants -->
-        <section class="">
+        <!-- Restaurant cards -->
+        <div class="restaurant-cards">
           <h1>Restaurants</h1>
-          <div class="restaurants">
-            <!-- Articles -->
-            <a href="/restaurants/kitchenWest.html" class="restaurant">
-              <article class="restaurant-card">
-                <div class="">
+          <!-- Articles -->
+          <div class="cards-container">
+            <a href="kitchenWest.html" class="restaurant">
+              <article class="card">
+                <div class="card-image">
                   <picture>
                     <img
                       class="restaurant-img"
                       alt="Kitchen West"
-                      src="/images/restaurants/KitchenWest.jpg"
+                      src="images/restaurants/KitchenWest.jpg"
                     />
                   </picture>
                   <span class="update">New</span>
                 </div>
-                <div class="">
-                  <div class="">
-                    <i class=""></i>
-                    <i class=""></i>
+                <div class="card-content">
+                  <div class="heart-icon-animation">
+                    <i class="fas fa-heart"></i>
                   </div>
                   <span class="restaurant-name">Kitchen West</span>
                   <span class="restaurant-desc">Angel</span>
                 </div>
               </article>
             </a>
-            <a href="/restaurants/elderflower.html" class="restaurant">
-              <article class="restaurant-card">
-                <div class="">
+            <a href="elderflower.html" class="restaurant">
+              <article class="card">
+                <div class="card-image">
                   <picture>
                     <img
                       class="restaurant-img"
                       alt="Kitchen West"
-                      src="/images/restaurants/Elderflower.jpg"
+                      src="images/restaurants/Elderflower.jpg"
                     />
                   </picture>
                   <span class="update">New</span>
                 </div>
-                <div class="">
-                  <div class="">
-                    <i class=""></i>
-                    <i class=""></i>
+                <div class="card-content">
+                  <div class="heart-icon-animation">
+                    <i class="fas fa-heart"></i>
                   </div>
                   <span class="restaurant-name">Elderflower</span>
                   <span class="restaurant-desc">Old Street</span>
                 </div>
               </article>
             </a>
-            <a href="/restaurants/shoreditchCanteen.html" class="restaurant">
-              <article class="restaurant-card">
-                <div class="">
+            <a href="shoreditchCanteen.html" class="restaurant">
+              <article class="card">
+                <div class="card-image">
                   <picture>
                     <img
                       class="restaurant-img"
                       alt="Kitchen West"
-                      src="/images/restaurants/ShoreditchCanteen.jpg"
+                      src="images/restaurants/ShoreditchCanteen.jpg"
                     />
                   </picture>
                 </div>
-                <div class="">
-                  <div class="">
-                    <i class=""></i>
-                    <i class=""></i>
+                <div class="card-content">
+                  <div class="heart-icon-animation">
+                    <i class="fas fa-heart"></i>
                   </div>
                   <span class="restaurant-name">Shoreditch Canteen</span>
                   <span class="restaurant-desc">Shoreditch</span>
                 </div>
               </article>
             </a>
-            <a href="/restaurants/theBayLeaf.html" class="restaurant">
-              <article class="restaurant-card">
-                <div class="">
+            <a href="theBayLeaf.html" class="restaurant">
+              <article class="card">
+                <div class="card-image">
                   <picture>
                     <img
                       class="restaurant-img"
                       alt="Kitchen West"
-                      src="/images/restaurants/TheBayLeaf.jpg"
+                      src="images/restaurants/TheBayLeaf.jpg"
                     />
                   </picture>
                 </div>
-                <div class="">
-                  <div class="">
-                    <i class=""></i>
-                    <i class=""></i>
+                <div class="card-content">
+                  <div class="heart-icon-animation">
+                    <i class="fas fa-heart"></i>
                   </div>
                   <span class="restaurant-name">The Bay Leaf</span>
                   <span class="restaurant-desc">Hoxton</span>
@@ -148,16 +162,18 @@
               </article>
             </a>
           </div>
-        </section>
+        </div>
 
         <!-- Footer -->
-        <footer>
-          <div class="mainFooter">
-            <img class="logo" alt="Logo" src="/images/logo/ohmyfood@2x.svg" />
-            <a class="" href="#"><i class=""></i>Suggest a restaurant</a>
-            <a class="" href="#"><i class=""></i>Become a partner</a>
-            <a class="" href="#">Legal notice</a>
-            <a class="" href="mailto:contact@ohmyfood.co.uk">Contact</a>
+        <footer class="main-footer">
+          <div class="footer-logo">
+            <span class="ohmyfood-logo">ohmyfood</span>
+          </div>
+          <div class="footer-content">
+            <a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a>
+            <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
+            <a href="#">Legal notice</a>
+            <a href="#">Contact</a>
           </div>
         </footer>
       </div>

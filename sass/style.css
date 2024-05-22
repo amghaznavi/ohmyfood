@@ -1,0 +1,236 @@
+/* ohmyfood color variables */
+:root {
+  --main-primary: #9356dc;
+  --main-secondary: #ff79da;
+  --main-tertiary: #99e2d0;
+  --omf-one: #008766;
+  --omf-two: #89c8fa;
+  --omf-three: #003a68;
+  --omf-four: #f3f3f3;
+  --omf-five: #353535;
+  --omf-six: #ffffff;
+  --omf-background: #f6f6f6;
+  --omf-eight: #eaeaea;
+  --omf-nine: #b3b3b3;
+  --omf-ten: #000000;
+  --omf-shadow: #d6d6d6;
+}
+
+/* Body & Main styling */
+body,
+main {
+  font-family: "Roboto", sans-serif;
+  width: 375px;
+  background-color: var(--omf-background);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ohmyfood-logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5em;
+}
+
+.ohmyfood-title {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--omf-ten);
+}
+
+/* location bar styling */
+.location-bar {
+  margin-top: 62.5px;
+  background-color: var(--omf-eight);
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Explorer styling */
+.explorer-container {
+  height: 229px;
+  display: flex;
+  justify-content: center;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 179px;
+  width: 100%;
+  text-align: center;
+}
+
+.explorer-btn {
+  margin-top: 25px;
+  width: 186px;
+  height: 50px;
+  background-color: #d96cfc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explorer-btn:hover {
+  background-color: #b058cc;
+}
+
+/* How it works styling */
+.how-it-works {
+  height: 600px;
+  background-color: var(--omf-six);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.step {
+  background-color: var(--omf-background);
+  width: 335px;
+  height: 75px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-primary);
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: -25px;
+}
+
+/* Restaurant cards styling */
+
+.cards-container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 251px;
+  width: 340px;
+  background-color: var(--omf-six);
+  border-radius: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 100%;
+  height: 75%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+  position: relative;
+}
+
+.update {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* left: 10px; */
+  background-color: var(--main-tertiary);
+  color: var(--omf-one);
+  /* padding: 5px 10px; */
+  border-radius: 5px;
+  /* font-size: 12px; */
+}
+
+/* Header & Footer styling */
+header,
+footer {
+  width: 100%;
+}
+
+header {
+  width: 375px;
+  position: fixed;
+  height: 63px;
+  background-color: var(--omf-six);
+  border-bottom: 1px solid var(--omf-nine);
+  box-shadow: 0px 0px 5px var(--omf-nine);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content a {
+  color: var(--omf-six);
+}
+
+footer {
+  color: var(--omf-six);
+  height: 186px;
+  margin-top: 25px;
+  background-color: var(--omf-five);
+  padding: 15px 0 15px 5%;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+/* Desktop view */
+/* @media (min-width: 768px) {
+  footer {
+    height: 114px;
+  }
+  header {
+    height: 96px;
+  }
+} */
