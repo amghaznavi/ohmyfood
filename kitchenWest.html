@@ -12,7 +12,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/kitchenWestStyle.css" />
+    <link rel="stylesheet" href="sass/style.css" />
 
     <!-- fontawesome.com -->
     <link
@@ -25,11 +25,13 @@
       <div class="main-container">
         <!-- Header -->
         <header>
-          <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-          </a>
-          <div class="mainHeader">
-            <img class="logo" alt="Logo" src="images/logo/ohmyfood@2x.svg" />
+          <div class="header-content">
+            <a href="index.html">
+              <i class="fas fa-arrow-left arrow"></i>
+            </a>
+            <div class="header-logo">
+              <span class="logo">ohmyfood</span>
+            </div>
           </div>
         </header>
 
@@ -40,7 +42,7 @@
               <img
                 class="rest-image"
                 alt="Elder flower"
-                src="images/restaurants/KitchenWest.jpg"
+                src="images/restaurants/mobile/KitchenWest.jpg"
               />
             </picture>
           </div>
@@ -48,13 +50,14 @@
           <div class="restaurant-menu-container">
             <div class="restaurant-name-container">
               <span class="ohmyfood-title">Kitchen West</span>
-              <div class="heart-icon-animation">
+              <div class="heart-icon-menu">
                 <i class="fas fa-heart"></i>
               </div>
             </div>
             <!-- Starter menu -->
-            <div class="starter-menu">
+            <div class="menu">
               <span class="starter">STARTERS</span>
+              <span class="line"></span>
               <div class="menu-card">
                 <span class="item">Smoked salmon</span>
                 <span class="description">
@@ -63,9 +66,7 @@
                   >
                   <span class="price">£25</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle item-check"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -74,9 +75,7 @@
                   <span class="description-text">With piccalilli</span>
                   <span class="price">£35</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -87,15 +86,14 @@
                   >
                   <span class="price">£20</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
             </div>
 
             <!-- Main menu -->
-            <div class="main-manu">
+            <div class="menu">
               <span class="main">MAINS</span>
+              <span class="line"></span>
 
               <div class="menu-card">
                 <span class="item">Beef fillet with herb butter</span>
@@ -105,9 +103,7 @@
                   >
                   <span class="price">£40</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -118,9 +114,7 @@
                   >
                   <span class="price">£35</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -129,15 +123,14 @@
                   <span class="description-text">With citrus dressing</span>
                   <span class="price">£44</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
             </div>
 
             <!-- Dessert menu -->
-            <div class="dessert-manu">
+            <div class="menu">
               <span class="dessert">DESSERTS</span>
+              <span class="line"></span>
               <div class="menu-card">
                 <span class="item">Treacle tart</span>
                 <span class="description">
@@ -146,9 +139,7 @@
                   >
                   <span class="price">£18</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -157,9 +148,7 @@
                   <span class="description-text">With shortbread biscuit</span>
                   <span class="price">£22</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
 
               <div class="menu-card">
@@ -170,9 +159,7 @@
                   >
                   <span class="price">£23</span>
                 </span>
-                <span class="item-check"
-                  ><i class="fas fa-check-circle"></i
-                ></span>
+                <!-- <span><i class="fas fa-check-circle"></i></span> -->
               </div>
             </div>
             <div class="order">
@@ -181,15 +168,15 @@
           </div>
         </article>
         <!-- Footer -->
-        <footer class="main-footer">
+        <footer>
           <div class="footer-logo">
-            <span class="ohmyfood-logo">ohmyfood</span>
+            <span class="logo">ohmyfood</span>
           </div>
           <div class="footer-content">
             <a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a>
             <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
             <a href="#">Legal notice</a>
-            <a href="#">Contact</a>
+            <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
           </div>
         </footer>
       </div>

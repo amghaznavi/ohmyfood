@@ -33,14 +33,21 @@
       <div class="main-container">
         <!-- Header -->
         <header>
-          <div class="main-header">
-            <img class="logo" alt="Logo" src="images/logo/ohmyfood@2x.svg" />
-          </div>
+          <header>
+            <div class="header-content">
+              <div class="header-logo">
+                <span class="logo">ohmyfood</span>
+              </div>
+            </div>
+          </header>
         </header>
 
         <!-- location bar -->
         <div class="location-bar">
-          <span><i class="fas fa-map-marker-alt"></i> Islington, London</span>
+          <span
+            ><i class="fas fa-map-marker-alt localization-icon"></i> Islington,
+            London</span
+          >
         </div>
 
         <!-- Explorer -->
@@ -75,89 +82,79 @@
         </div>
 
         <!-- Restaurant cards -->
-        <div class="restaurant-cards">
+        <div class="restaurant-cards-container">
           <h1>Restaurants</h1>
           <!-- Articles -->
           <div class="cards-container">
-            <a href="kitchenWest.html" class="restaurant">
+            <a href="kitchenWest.html" class="restaurant-link">
               <article class="card">
-                <div class="card-image">
+                <div class="card-image-box">
                   <picture>
                     <img
-                      class="restaurant-img"
                       alt="Kitchen West"
-                      src="images/restaurants/KitchenWest.jpg"
+                      src="images/restaurants/mobile/KitchenWest.jpg"
                     />
                   </picture>
                   <span class="update">New</span>
                 </div>
                 <div class="card-content">
-                  <div class="heart-icon-animation">
-                    <i class="fas fa-heart"></i>
-                  </div>
                   <span class="restaurant-name">Kitchen West</span>
                   <span class="restaurant-desc">Angel</span>
+                  <i class="fas fa-heart heart-icon"></i>
                 </div>
               </article>
             </a>
-            <a href="elderflower.html" class="restaurant">
+
+            <a href="elderflower.html" class="restaurant-link">
               <article class="card">
-                <div class="card-image">
+                <div class="card-image-box">
                   <picture>
                     <img
-                      class="restaurant-img"
-                      alt="Kitchen West"
-                      src="images/restaurants/Elderflower.jpg"
+                      alt="Elderflower"
+                      src="images/restaurants/mobile/Elderflower.jpg "
                     />
                   </picture>
                   <span class="update">New</span>
                 </div>
                 <div class="card-content">
-                  <div class="heart-icon-animation">
-                    <i class="fas fa-heart"></i>
-                  </div>
                   <span class="restaurant-name">Elderflower</span>
                   <span class="restaurant-desc">Old Street</span>
+                  <i class="fas fa-heart heart-icon"></i>
                 </div>
               </article>
             </a>
+
             <a href="shoreditchCanteen.html" class="restaurant">
               <article class="card">
-                <div class="card-image">
+                <div class="card-image-box">
                   <picture>
                     <img
-                      class="restaurant-img"
-                      alt="Kitchen West"
-                      src="images/restaurants/ShoreditchCanteen.jpg"
+                      alt="Shoreditch Canteen"
+                      src="images/restaurants/mobile/ShoreditchCanteen.jpg"
                     />
                   </picture>
                 </div>
                 <div class="card-content">
-                  <div class="heart-icon-animation">
-                    <i class="fas fa-heart"></i>
-                  </div>
                   <span class="restaurant-name">Shoreditch Canteen</span>
                   <span class="restaurant-desc">Shoreditch</span>
+                  <i class="fas fa-heart heart-icon"></i>
                 </div>
               </article>
             </a>
             <a href="theBayLeaf.html" class="restaurant">
               <article class="card">
-                <div class="card-image">
+                <div class="card-image-box">
                   <picture>
                     <img
-                      class="restaurant-img"
-                      alt="Kitchen West"
-                      src="images/restaurants/TheBayLeaf.jpg"
+                      alt="The Bay Leaf"
+                      src="images/restaurants/mobile/TheBayLeaf.jpg"
                     />
                   </picture>
                 </div>
                 <div class="card-content">
-                  <div class="heart-icon-animation">
-                    <i class="fas fa-heart"></i>
-                  </div>
                   <span class="restaurant-name">The Bay Leaf</span>
                   <span class="restaurant-desc">Hoxton</span>
+                  <i class="fas fa-heart heart-icon"></i>
                 </div>
               </article>
             </a>
@@ -165,15 +162,15 @@
         </div>
 
         <!-- Footer -->
-        <footer class="main-footer">
+        <footer>
           <div class="footer-logo">
-            <span class="ohmyfood-logo">ohmyfood</span>
+            <span class="logo">ohmyfood</span>
           </div>
           <div class="footer-content">
             <a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a>
             <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
             <a href="#">Legal notice</a>
-            <a href="#">Contact</a>
+            <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
           </div>
         </footer>
       </div>
