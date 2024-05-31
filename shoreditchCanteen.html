@@ -39,10 +39,14 @@
         <article class="restaurant-menu-article">
           <div class="restaurant-image">
             <picture>
+              <source
+                srcset="images/restaurants/mobile/ShoreditchCanteen.jpg"
+                media="(max-width: 991px)"
+              />
               <img
-                class="rest-image"
+                class="image"
                 alt="Elder flower"
-                src="images/restaurants/mobile/ShoreditchCanteen.jpg"
+                src="images/restaurants/ShoreditchCanteen.jpg"
               />
             </picture>
           </div>
@@ -179,14 +183,18 @@
         </article>
         <!-- Footer -->
         <footer>
-          <div class="footer-logo">
-            <span class="logo">ohmyfood</span>
-          </div>
           <div class="footer-content">
-            <a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a>
-            <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
-            <a href="#">Legal notice</a>
-            <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
+            <div class="footer-logo">
+              <span class="logo">ohmyfood</span>
+            </div>
+            <div class="footer-link">
+              <a href="#"
+                ><i class="fas fa-utensils"></i> Suggest a restaurant</a
+              >
+              <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
+              <a href="#">Legal notice</a>
+              <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
+            </div>
           </div>
         </footer>
       </div>

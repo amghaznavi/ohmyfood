@@ -34,15 +34,18 @@
             </div>
           </div>
         </header>
-
         <!-- Restaurant menu article -->
         <article class="restaurant-menu-article">
           <div class="restaurant-image">
             <picture>
+              <source
+                srcset="images/restaurants/mobile/Elderflower.jpg"
+                media="(max-width: 991px)"
+              />
               <img
                 class="image"
                 alt="Elder flower"
-                src="images/restaurants/mobile/Elderflower.jpg"
+                src="images/restaurants/Elderflower.jpg"
               />
             </picture>
           </div>
@@ -193,17 +196,20 @@
             </div>
           </div>
         </article>
-
         <!-- Footer -->
         <footer>
-          <div class="footer-logo">
-            <span class="logo">ohmyfood</span>
-          </div>
           <div class="footer-content">
-            <a href="#"><i class="fas fa-utensils"></i> Suggest a restaurant</a>
-            <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
-            <a href="#">Legal notice</a>
-            <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
+            <div class="footer-logo">
+              <span class="logo">ohmyfood</span>
+            </div>
+            <div class="footer-link">
+              <a href="#"
+                ><i class="fas fa-utensils"></i> Suggest a restaurant</a
+              >
+              <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
+              <a href="#">Legal notice</a>
+              <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
+            </div>
           </div>
         </footer>
       </div>
