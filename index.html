@@ -4,27 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-
+    <!-- Favicon -->
     <link
+      rel="shortcut icon"
       href="images/logo/ohmyfood.png"
       type="image/x-icon"
-      rel="shortcut icon"
     />
-
     <!-- Link to Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="sass/style.css" />
-
     <!-- fontawesome.com -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="sass/style.css" />
   </head>
 
   <body>
@@ -43,18 +40,18 @@
 
         <!-- location bar -->
         <div class="location-bar">
-          <span
-            ><i class="fas fa-map-marker-alt localization-icon"></i> Islington,
-            London</span
-          >
+          <p>
+            <i class="fas fa-map-marker-alt localization-icon"></i> Islington,
+            London
+          </p>
         </div>
 
         <!-- Explorer -->
         <div class="explorer-container">
-          <div class="explorer">
+          <div class="explorer-text-container">
             <h1>Book the meal you want</h1>
             <span>Discover our carefully selected high-end restaurants</span>
-            <button class="explorer-btn">Explore our restaurants</button>
+            <button class="explorer-button">Explore our restaurants</button>
           </div>
         </div>
 
@@ -64,98 +61,101 @@
           <div class="steps-container">
             <article class="step">
               <span class="step-number">1</span>
-              <span><i class="fas fa-mobile-alt"></i> Choose a restaurant</span>
+              <span
+                ><i class="fas fa-mobile-alt hiw-icon"></i> Choose a
+                restaurant</span
+              >
             </article>
             <article class="step">
               <span class="step-number">2</span>
-              <span><i class="fas fa-list-ul"></i> Build your meal</span>
+              <span
+                ><i class="fas fa-list-ul hiw-icon"></i> Build your meal</span
+              >
             </article>
             <article class="step">
               <span class="step-number">3</span>
               <span
-                ><i class="fas fa-store fa-fw"></i> Enjoy your meal at the
-                restaurant</span
+                ><i class="fas fa-store fa-fw hiw-icon"></i> Enjoy your meal at
+                the restaurant</span
               >
             </article>
           </div>
         </div>
 
         <!-- Restaurant cards -->
-        <div class="restaurant-cards-container">
+        <div class="content">
           <h1>Restaurants</h1>
-          <!-- Articles -->
-          <div class="cards-container">
-            <a href="kitchenWest.html" class="restaurant-link">
-              <article class="card">
-                <div class="card-image-box">
-                  <picture>
-                    <img
-                      alt="Kitchen West"
-                      src="images/restaurants/mobile/KitchenWest.jpg"
-                    />
-                  </picture>
-                  <span class="update">New</span>
-                </div>
-                <div class="card-content">
-                  <span class="restaurant-name">Kitchen West</span>
-                  <span class="restaurant-desc">Angel</span>
-                  <i class="fas fa-heart heart-icon"></i>
-                </div>
-              </article>
+          <div class="card-container">
+            <a href="kitchenWest.html" class="card">
+              <picture>
+                <source
+                  srcset="images/restaurants/mobile/KitchenWest.jpg"
+                  media="(max-width: 991px)"
+                />
+                <img
+                  src="images/restaurants/KitchenWest.jpg"
+                  alt="Kitchen West"
+                />
+              </picture>
+              <span class="update">New</span>
+              <div class="card-content">
+                <span class="name">Kitchen West</span>
+                <span class="description">Angel</span>
+                <i class="far fa-heart heart-icon"></i>
+              </div>
             </a>
 
-            <a href="elderflower.html" class="restaurant-link">
-              <article class="card">
-                <div class="card-image-box">
-                  <picture>
-                    <img
-                      alt="Elderflower"
-                      src="images/restaurants/mobile/Elderflower.jpg "
-                    />
-                  </picture>
-                  <span class="update">New</span>
-                </div>
-                <div class="card-content">
-                  <span class="restaurant-name">Elderflower</span>
-                  <span class="restaurant-desc">Old Street</span>
-                  <i class="fas fa-heart heart-icon"></i>
-                </div>
-              </article>
+            <a href="elderflower.html" class="card">
+              <picture>
+                <source
+                  srcset="images/restaurants/mobile/Elderflower.jpg"
+                  media="(max-width: 991px)"
+                />
+                <img
+                  src="images/restaurants/Elderflower.jpg"
+                  alt="Elderflower"
+                />
+              </picture>
+              <span class="update">New</span>
+              <div class="card-content">
+                <span class="name">Elderflower</span>
+                <span class="description">Old Street</span>
+                <i class="far fa-heart heart-icon"></i>
+              </div>
             </a>
 
-            <a href="shoreditchCanteen.html" class="restaurant">
-              <article class="card">
-                <div class="card-image-box">
-                  <picture>
-                    <img
-                      alt="Shoreditch Canteen"
-                      src="images/restaurants/mobile/ShoreditchCanteen.jpg"
-                    />
-                  </picture>
-                </div>
-                <div class="card-content">
-                  <span class="restaurant-name">Shoreditch Canteen</span>
-                  <span class="restaurant-desc">Shoreditch</span>
-                  <i class="fas fa-heart heart-icon"></i>
-                </div>
-              </article>
+            <a href="shoreditchCanteen.html" class="card">
+              <picture>
+                <source
+                  srcset="images/restaurants/mobile/ShoreditchCanteen.jpg"
+                  media="(max-width: 991px)"
+                />
+                <img
+                  src="images/restaurants/ShoreditchCanteen.jpg"
+                  alt="Shoreditch Canteen"
+                />
+              </picture>
+              <div class="card-content">
+                <span class="name">Shoreditch Canteen</span>
+                <span class="description">Shoreditch</span>
+                <i class="far fa-heart heart-icon"></i>
+              </div>
             </a>
-            <a href="theBayLeaf.html" class="restaurant">
-              <article class="card">
-                <div class="card-image-box">
-                  <picture>
-                    <img
-                      alt="The Bay Leaf"
-                      src="images/restaurants/mobile/TheBayLeaf.jpg"
-                    />
-                  </picture>
-                </div>
-                <div class="card-content">
-                  <span class="restaurant-name">The Bay Leaf</span>
-                  <span class="restaurant-desc">Hoxton</span>
-                  <i class="fas fa-heart heart-icon"></i>
-                </div>
-              </article>
+
+            <a href="theBayLeaf.html" class="card">
+              <picture>
+                <source srcset="images/restaurants/mobile/TheBayLeaf.jpg""
+                media="(max-width: 991px)" />
+                <img
+                  src="images/restaurants/TheBayLeaf.jpg"
+                  alt="The Bay Leaf"
+                />
+              </picture>
+              <div class="card-content">
+                <span class="name">The Bay Leaf</span>
+                <span class="description">Hoxton</span>
+                <i class="far fa-heart heart-icon"></i>
+              </div>
             </a>
           </div>
         </div>
@@ -168,9 +168,11 @@
             </div>
             <div class="footer-link">
               <a href="#"
-                ><i class="fas fa-utensils"></i> Suggest a restaurant</a
+                ><i class="fas fa-utensils f-icon"></i> Suggest a restaurant</a
               >
-              <a href="#"><i class="fas fa-handshake"></i> Become a partner</a>
+              <a href="#"
+                ><i class="fas fa-hands-helping f-icon"></i> Become a partner</a
+              >
               <a href="#">Legal notice</a>
               <a href="mailto:contact@ohmyfood.co.uk">Contact</a>
             </div>
