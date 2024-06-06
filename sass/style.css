@@ -22,9 +22,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 h2,
-h3 {
-  font-size: 32px;
+.explorer-container h1 {
+  font-size: 40px;
+}
+
+.how-it-works h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .main-container {
@@ -286,6 +295,17 @@ a {
 }
 
 /* Restaurant menu styling */
+.description-text {
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 1px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .heart-icon-m,
 .fill-heart-icon-m {
   font-size: 25px;
@@ -340,7 +360,7 @@ a {
   background-color: var(--omf-light);
   border-radius: 15px;
   margin: 10px;
-  padding: 15px 10px;
+  padding: 15px;
   box-shadow: 10px 5px 5px var(--omf-shadow);
   display: flex;
   box-sizing: border-box;
@@ -367,8 +387,7 @@ a {
   font-size: 1.6em;
 }
 
-.item,
-.price {
+.item {
   font-size: 18px;
   font-weight: bold;
 }
